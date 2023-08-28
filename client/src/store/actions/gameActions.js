@@ -37,7 +37,7 @@ export function getMyGames() {
 }
 
 export function getGameByName(query) {
-  return function (dispatch) {
+  return async (dispatch) => {
     return axios.get(`/videogames?name=${query}`).then((response) => {
       dispatch({
         type: GET_GAME_BY_NAME,
@@ -48,7 +48,7 @@ export function getGameByName(query) {
 }
 
 export function getGameById(id) {
-  return function (dispatch) {
+  return async (dispatch) => {
     return axios.get(`/videogames/${id}`).then((response) => {
       dispatch({
         type: GET_GAME_BY_ID,
@@ -65,7 +65,7 @@ export function clearDetail() {
 }
 
 export function getAllGenres() {
-  return function (dispatch) {
+  return async (dispatch) => {
     return axios.get(`/genres/all`).then((response) => {
       dispatch({
         type: GET_ALL_GENRES,
@@ -76,7 +76,7 @@ export function getAllGenres() {
 }
 
 export function createGame(form) {
-  return function (dispatch) {
+  return async (dispatch) => {
     return axios.post("/videogames", form).then((response) => {
       dispatch({
         type: CREATE_GAME,
