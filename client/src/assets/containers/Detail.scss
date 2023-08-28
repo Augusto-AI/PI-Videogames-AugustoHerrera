@@ -1,0 +1,106 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container {
+  width: 35%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(114, 57, 194);
+  border-radius: 40px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: #7952b3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 50px;
+  padding: 20px 40px 20px;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+}
+
+.card__details--title__container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26px;
+}
+
+.card__details--subtitle__container {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.card__details--list__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card:hover .card__details {
+  opacity: 4;
+}
+
+.card__details--subtitle {
+  color: #7952b3;
+  margin: 5px 20px 0px 0px;
+  font-family: "Muli", sans-serif;
+}
+
+.card__details--list {
+  margin: 10px;
+  font-size: 16px;
+  font-family: "Muli", sans-serif;
+}
+
+.card_details--description {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Muli", sans-serif;
+  text-align: justify;
+}
+
+.game__image {
+  width: 100%;
+  // height: 250%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  object-fit: cover;
+}
+
+.loading {
+  align-self: center;
+}
+
+.container-image {
+  height: 200px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+}
+
+.container-image > .crop {
+  position: absolute;
+  left: -100%;
+  right: -100%;
+  top: -100%;
+  bottom: -100%;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+}

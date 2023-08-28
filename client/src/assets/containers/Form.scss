@@ -1,0 +1,87 @@
+.form-background {
+    background: #151515;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+.form__container {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 60px 68px 40px;
+}
+
+.form__container--header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form--input {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    width: 90%;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 0px 20px;
+}
+
+.form--input-label {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 22px;
+}
+
+.form--container-list {
+    display: flex;
+}
+
+.form--container-title {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-family: 'Muli', sans-serif;
+}
+
+.form--container-checkbox{
+    display: flex;
+    padding: 0px 20px;
+}
+
+.form--checkbox {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, .3);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}

@@ -1,0 +1,58 @@
+.allGames__container {
+  overflow: hidden;
+  margin: 5px 5px 0px 5px;
+  padding-bottom: 10px;
+}
+
+// .allGames__container::-webkit-scrollbar {
+//     display: none;
+// }
+
+.carousel {
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+.allGames__title {
+  color: #ffffff;
+  font-size: 16px;
+  padding-left: 30px;
+  width: 100%;
+}
+
+.button__container {
+  display: flex;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.select {
+  margin-right: 10px;
+  background-color: #7952b3;
+  color: #151515;
+  border: none;
+  border-radius: 25px;
+  height: 25px;
+  font-family: "Muli", sans-serif;
+}
+
+.notFound__container {
+  display: flex;
+  justify-content: center;
+}
+
+.notFound--title {
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.notFound--button {
+  background-color: #a007ff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Muli", sans-serif;
+  margin: 10px 0;
+}

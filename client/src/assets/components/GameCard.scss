@@ -1,0 +1,93 @@
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  width: 300px;
+  height: 260px;
+  // width: 140px;
+  // height: 140px;
+  margin: 0px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.card__details {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  transition: 450ms opacity;
+  position: absolute;
+}
+
+.card:hover .card__details {
+  opacity: 4;
+}
+
+.card__image {
+  width: 300px;
+  height: 260px;
+  object-fit: cover;
+  // width: 140px;
+  // height: 140px;
+}
+
+.card__details--title {
+  color: white;
+  font-size: 16px solid;
+  margin: 5px 0px 0px 0px;
+  font-family: "Muli", sans-serif;
+}
+
+.card__details--list {
+  color: white;
+  font-size: 14px;
+  margin: 3px 0px;
+  left: 0px;
+  list-style: none;
+}
+
+.card__details--button {
+  // padding: 10px ;
+  background-color: #a007ff;
+  color: #151515;
+  border: none;
+  border-radius: 10px;
+  height: 25px;
+  width: 50%;
+  font-family: "Muli", sans-serif;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.card__details--button-favorite {
+  background-color: #ffc107;
+  color: #151515;
+  border: none;
+  border-radius: 10px;
+  height: 25px;
+  width: 50%;
+  font-family: "Muli", sans-serif;
+  cursor: pointer;
+}
+
+.card__details--button-delete {
+  background-color: red;
+  color: #151515;
+  border: none;
+  border-radius: 10px;
+  height: 25px;
+  width: 50%;
+  font-family: "Muli", sans-serif;
+  cursor: pointer;
+}
