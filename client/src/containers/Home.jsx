@@ -46,7 +46,7 @@ const Home = ({
 
       {games !== undefined && (
         <AllGames
-          title="Mira estos videojuegos"
+          title="VideoGames"
           games={games}
           state={"allGames"}
           genres={genres}
@@ -56,7 +56,7 @@ const Home = ({
 
       {favorites.length > 0 ? (
         <AllGames
-          title="Favoritos"
+          title="VideoGamesFavoritos"
           games={favorites}
           state="favorites"
           genres={genres}
@@ -67,7 +67,7 @@ const Home = ({
 
       {myGames !== undefined && (
         <AllGames
-          title="Tus videojuegos creados"
+          title="Tus VideoGames creados"
           games={myGames}
           state={"myGames"}
           genres={genres}

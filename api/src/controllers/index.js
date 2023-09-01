@@ -13,12 +13,12 @@ class ModelCrud {
   //busca en la API
   getAllVideogames = async (req, res, next) => {
     try {
-      const apiGame = await axios.get(`${VIDEOGAMES_URL}&page_size=100`);
+      const apiGame = await axios.get(`${VIDEOGAMES_URL}&page_size=200`);
       const results = apiGame.data.results;
       // console.log(apiGame);
-      res.json(results);
+      return res.status(200).json(results);
     } catch (error) {
-      res.send(error);
+      return res.status(500).json({ error: error.message });
     }
   };
 
@@ -66,7 +66,7 @@ class ModelCrud {
       const response = myGameResults.concat(apiGameResults.data.results);
       res.json(response);
     } catch (error) {
-      next(error);
+      return res.status(500).json({ error: error.message });
     }
   };
 
@@ -121,7 +121,7 @@ class ModelCrud {
       });
       return res.send("Videogame Creado!");
     } catch (error) {
-      console.log(error);
+      return res.status(500).json({ error: error.message });
     }
   };
 
@@ -144,7 +144,7 @@ class ModelCrud {
       // if(find.length === 19) return res.send
       res.send(find);
     } catch (error) {
-      res.sendStatus(error);
+      return res.status(500).json({ error: error.message });
     }
   };
 }

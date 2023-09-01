@@ -36,7 +36,7 @@ const AllGames = ({
 
   //PAGINADO///////////////////////////////////////
   const [currentPage, setCurrentPage] = useState(1);
-  const [gamesPerPage] = useState(8);
+  const [gamesPerPage] = useState(5);
 
   //Get current posts
   const indexLast = currentPage * gamesPerPage;
@@ -51,7 +51,7 @@ const AllGames = ({
 
   return (
     <>
-      {games.length > 0 ? (
+      {games?.length ? (
         <section className="allGames__container">
           <h3 className="allGames__title">{title}</h3>
           <div className="button__container">
@@ -113,7 +113,7 @@ const AllGames = ({
               className="notFound--button"
               onClick={(event) => handleCall(event)}
             >
-              Cargar todos los juegos
+              Cargar todos los VideoGames
             </button>
           </div>
         </section>

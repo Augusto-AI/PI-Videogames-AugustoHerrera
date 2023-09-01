@@ -7,7 +7,7 @@ const Header = ({ landing }) => {
   return (
     <header className="header">
       <Link to="/home">
-        <img className="header__img" src={Logo} alt="Logo de Henry" />
+        <img className="header__img" src={Logo} alt="Logo" />
       </Link>
 
       {landing !== "landing" && (
@@ -21,7 +21,7 @@ const Header = ({ landing }) => {
       {landing !== "landing" && (
         <div>
           <Link to="/home/create" style={{ textDecoration: "none" }}>
-            <h3 className="header__create">CREAR VIDEOGAME</h3>
+            <h3 className="header__create">CREAR VideoGame</h3>
           </Link>
         </div>
       )}

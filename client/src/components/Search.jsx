@@ -4,7 +4,7 @@ import { getGameByName } from "../store/actions/gameActions";
 import AllGames from "./AllGames";
 import "../assets/containers/Search.scss";
 
-const Search = ({ games, getGameByName, genres }) => {
+const Search = ({ games = [], getGameByName, genres }) => {
   const [description, setDescription] = useState("");
 
   const handleSubmit = (event) => {
@@ -20,7 +20,7 @@ const Search = ({ games, getGameByName, genres }) => {
             <input
               name="game"
               type="text"
-              placeholder="Busca un videojuego..."
+              placeholder="Busca un VideoGame..."
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               className="search--input"
@@ -33,7 +33,7 @@ const Search = ({ games, getGameByName, genres }) => {
       </section>
       {games !== undefined && (
         <AllGames
-          title={`Estos son todos los videojuegos que incluyen ${description}`}
+          title={`VideoGames que incluyen ${description}`}
           games={games}
           state={"searchGames"}
           genres={genres}

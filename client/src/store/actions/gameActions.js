@@ -28,6 +28,7 @@ export function getAllGames() {
 export function getMyGames() {
   return async (dispatch) => {
     return axios.get(`/videogames/myGames`).then((response) => {
+      console.log(response);
       dispatch({
         type: GET_MY_GAMES,
         payload: response.data,
@@ -39,6 +40,7 @@ export function getMyGames() {
 export function getGameByName(query) {
   return async (dispatch) => {
     return axios.get(`/videogames?name=${query}`).then((response) => {
+      console.log(response);
       dispatch({
         type: GET_GAME_BY_NAME,
         payload: response.data,
@@ -50,6 +52,7 @@ export function getGameByName(query) {
 export function getGameById(id) {
   return async (dispatch) => {
     return axios.get(`/videogames/${id}`).then((response) => {
+      console.log(response);
       dispatch({
         type: GET_GAME_BY_ID,
         payload: response.data,
@@ -67,6 +70,7 @@ export function clearDetail() {
 export function getAllGenres() {
   return async (dispatch) => {
     return axios.get(`/genres/all`).then((response) => {
+      console.log(response);
       dispatch({
         type: GET_ALL_GENRES,
         payload: response.data,
