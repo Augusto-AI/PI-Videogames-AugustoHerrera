@@ -3,7 +3,7 @@ const { Router } = require("express");
 // Ejemplo: const authRouter = require('./auth.js');
 const videogamesRouter = require("./videogames.js");
 const genresRouter = require("./genre.js");
-
+const dbRouter = require("./db.js");
 const router = Router();
 
 // Configurar los routers
