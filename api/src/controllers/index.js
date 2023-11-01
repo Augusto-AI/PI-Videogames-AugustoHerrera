@@ -13,7 +13,7 @@ class ModelCrud {
   //busca en la API
   getAllVideogames = async (req, res, next) => {
     try {
-      const apiGame = await axios.get(`${VIDEOGAMES_URL}&page_size=200`);
+      const apiGame = await axios.get(`${VIDEOGAMES_URL}&page_size=500`);
       const results = apiGame.data.results;
       // console.log(apiGame);
       return res.status(200).json(results);
@@ -60,7 +60,7 @@ class ModelCrud {
             },
           },
         }),
-        axios.get(`${VIDEOGAMES_URL}&search=${name}&page_size=100`),
+        axios.get(`${VIDEOGAMES_URL}&search=${name}&page_size=500`),
       ]);
 
       const response = myGameResults.concat(apiGameResults.data.results);
